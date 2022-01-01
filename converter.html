@@ -207,17 +207,17 @@ const massButton = document.getElementById('mass').addEventListener('click', (e)
 	toImperial.style.display='block';
 	resetButton.style.display = 'block';
 	toMetric.addEventListener('click', (e) => {
-		output.innerHTML = `${input.value} ounce &rarr; ${massUnits.imperial.ounce()} Gramm <br>
-		${input.value} pound &rarr; ${massUnits.imperial.pound()} Kilogramm <br>
-		${input.value} stone &rarr; ${massUnits.imperial.stone()} Kilogramm <br>
-		${input.value} ton &rarr; ${massUnits.imperial.imperialTon()} Tonne
+		output.innerHTML = `${input.value} <center> ounce &rarr; ${massUnits.imperial.ounce()} Gramm </center>
+		${input.value} <center> pound &rarr; ${massUnits.imperial.pound()} Kilogramm </center>
+		${input.value} <center> stone &rarr; ${massUnits.imperial.stone()} Kilogramm </center>
+		${input.value} <center> ton &rarr; ${massUnits.imperial.imperialTon()} Tonne </center>
 		`;
 	});
 	toImperial.addEventListener('click', (e) => {
-		output.innerHTML = `${input.value} Gramm &rarr; ${massUnits.metric.gram()} ounce <br>
-		${input.value} Kilogramm &rarr; ${massUnits.metric.kglb()} pound <br>
-		${input.value} Kilogramm &rarr; ${massUnits.metric.kgst()} stone <br>
-		${input.value} Tonne &rarr; ${massUnits.metric.metricTonne()} ton 
+		output.innerHTML = `${input.value} <center> Gramm &rarr; ${massUnits.metric.gram()} ounce </center>
+		${input.value} <center> Kilogramm &rarr; ${massUnits.metric.kglb()} pound </center>
+		${input.value} <center> Kilogramm &rarr; ${massUnits.metric.kgst()} stone </center>
+		${input.value} <center> Tonne &rarr; ${massUnits.metric.metricTonne()} ton </center>
 		`;
 	});
 	output.style.display = 'block';
@@ -238,17 +238,17 @@ const volumeButton = document.getElementById('volume').addEventListener('click',
 	toImperial.style.display='block';
 	resetButton.style.display = 'block';
 	toMetric.addEventListener('click', (e) => {
-		output.innerHTML = `${input.value} fl. ounce &rarr; ${volumeUnits.imperial.fluidOunce()} Milliliter <br>
-		${input.value} Pint &rarr; ${volumeUnits.imperial.pint()} Liter <br>
-		${input.value} Quart &rarr; ${volumeUnits.imperial.quart()} Liter <br>
-		${input.value} Gallone &rarr; ${volumeUnits.imperial.gallon()} Liter
+		output.innerHTML = `${input.value} <center> fl. ounce &rarr; ${volumeUnits.imperial.fluidOunce()} Milliliter </center>
+		${input.value} <center> Pint &rarr; ${volumeUnits.imperial.pint()} Liter </center>
+		${input.value} <center> Quart &rarr; ${volumeUnits.imperial.quart()} Liter </center>
+		${input.value} <center> Gallone &rarr; ${volumeUnits.imperial.gallon()} Liter </center>
 		`;
 	});
 	toImperial.addEventListener('click', (e) =>{
-		output.innerHTML = `${input.value} Milliliter &rarr; ${volumeUnits.metric.ml()} fluid ounce <br>
-		${input.value} Liter &rarr; ${volumeUnits.metric.lToPt()} pint <br>
-		${input.value} Liter &rarr; ${volumeUnits.metric.lToQt()} quart <br>
-		${input.value} Liter &rarr; ${volumeUnits.metric.lToGallon()} gallon
+		output.innerHTML = `${input.value} Milliliter &rarr; ${volumeUnits.metric.ml()} fluid ounce </center>
+		${input.value} <center> Liter &rarr; ${volumeUnits.metric.lToPt()} pint </center>
+		${input.value} <center> Liter &rarr; ${volumeUnits.metric.lToQt()} quart </center>
+		${input.value} <center> Liter &rarr; ${volumeUnits.metric.lToGallon()} gallon </center>
 		`;
 	});
 	output.style.display = 'block';
@@ -269,17 +269,17 @@ const temperatureButton = document.getElementById('temperature').addEventListene
 	toKelvin.style.display = 'block';
 	resetButton.style.display = 'block';
 	toCelsius.addEventListener('click', (e) =>{
-		output.innerHTML = `${input.value} &deg;F &rarr; ${temperatureUnits.fahrenheit.fToC()} &deg;C <br>
-		${input.value} &deg;K &rarr; ${temperatureUnits.kelvin.kToC()} &deg;C`;
+		output.innerHTML = `${input.value} <center> &deg;F &rarr; ${temperatureUnits.fahrenheit.fToC()} &deg;C </center>
+		${input.value} <center> &deg;K &rarr; ${temperatureUnits.kelvin.kToC()} &deg;C`; </center>
 		});
 	toFahrenheit.addEventListener('click', (e) =>{
-		output.innerHTML = `${input.value} &deg;C &rarr; ${temperatureUnits.celsius.cToF()} &deg;F <br>
-		${input.value} &deg;K &rarr; ${temperatureUnits.kelvin.kToF()} &deg;F <br>
+		output.innerHTML = `${input.value} <center> &deg;C &rarr; ${temperatureUnits.celsius.cToF()} &deg;F </center>
+		${input.value} <center> &deg;K &rarr; ${temperatureUnits.kelvin.kToF()} &deg;F </center> <br>
 		`;
 	});
 	toKelvin.addEventListener('click', (e) =>{
-		output.innerHTML = `${input.value} &deg;F &rarr; ${temperatureUnits.fahrenheit.fToK()} &deg;K <br>
-		${input.value} &deg;C &rarr; ${temperatureUnits.celsius.cToK()} &deg;K <br>
+		output.innerHTML = `${input.value} <center> &deg;F &rarr; ${temperatureUnits.fahrenheit.fToK()} &deg;K </center>
+		${input.value} <center> &deg;C &rarr; ${temperatureUnits.celsius.cToK()} &deg;K </center> <br>
 		`;
 	});
 	output.style.display = 'block';

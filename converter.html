@@ -238,14 +238,14 @@ const volumeButton = document.getElementById('volume').addEventListener('click',
 	toImperial.style.display='block';
 	resetButton.style.display = 'block';
 	toMetric.addEventListener('click', (e) => {
-		output.innerHTML = `${input.value} fl. ounce &rarr; ${volumeUnits.imperial.fluidOunce()} ml <br>
+		output.innerHTML = `${input.value} fl. ounce &rarr; ${volumeUnits.imperial.fluidOunce()} Milliliter <br>
 		${input.value} Pint &rarr; ${volumeUnits.imperial.pint()} Liter <br>
 		${input.value} Quart &rarr; ${volumeUnits.imperial.quart()} Liter <br>
 		${input.value} Gallone &rarr; ${volumeUnits.imperial.gallon()} Liter
 		`;
 	});
 	toImperial.addEventListener('click', (e) =>{
-		output.innerHTML = `${input.value} ml &rarr; ${volumeUnits.metric.ml()} fluid ounce <br>
+		output.innerHTML = `${input.value} Milliliter &rarr; ${volumeUnits.metric.ml()} fluid ounce <br>
 		${input.value} Liter &rarr; ${volumeUnits.metric.lToPt()} pint <br>
 		${input.value} Liter &rarr; ${volumeUnits.metric.lToQt()} quart <br>
 		${input.value} Liter &rarr; ${volumeUnits.metric.lToGallon()} gallon

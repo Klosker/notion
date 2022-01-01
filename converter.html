@@ -207,17 +207,17 @@ const massButton = document.getElementById('mass').addEventListener('click', (e)
 	toImperial.style.display='block';
 	resetButton.style.display = 'block';
 	toMetric.addEventListener('click', (e) => {
-		output.innerHTML = `${input.value} ounce &rarr; ${massUnits.imperial.ounce()} gram <br>
+		output.innerHTML = `${input.value} ounce &rarr; ${massUnits.imperial.ounce()} g <br>
 		${input.value} pound &rarr; ${massUnits.imperial.pound()} kg <br>
 		${input.value} stone &rarr; ${massUnits.imperial.stone()} kg <br>
-		${input.value} ton &rarr; ${massUnits.imperial.imperialTon()} tonne
+		${input.value} ton &rarr; ${massUnits.imperial.imperialTon()} t
 		`;
 	});
 	toImperial.addEventListener('click', (e) => {
-		output.innerHTML = `${input.value} gram &rarr; ${massUnits.metric.gram()} ounce <br>
+		output.innerHTML = `${input.value} g &rarr; ${massUnits.metric.gram()} ounce <br>
 		${input.value} kg &rarr; ${massUnits.metric.kglb()} pound <br>
 		${input.value} kg &rarr; ${massUnits.metric.kgst()} stone <br>
-		${input.value} tonne &rarr; ${massUnits.metric.metricTonne()} ton 
+		${input.value} t &rarr; ${massUnits.metric.metricTonne()} ton 
 		`;
 	});
 	output.style.display = 'block';

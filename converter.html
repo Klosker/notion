@@ -270,7 +270,7 @@ const temperatureButton = document.getElementById('temperature').addEventListene
 	resetButton.style.display = 'block';
 	toCelsius.addEventListener('click', (e) =>{
 		output.innerHTML = `${input.value} <center> &deg;F &rarr; ${temperatureUnits.fahrenheit.fToC()} &deg;C </center>
-		${input.value} <center> &deg;K &rarr; ${temperatureUnits.kelvin.kToC()} &deg;C`; </center>
+		${input.value} <center> &deg;K &rarr; ${temperatureUnits.kelvin.kToC()} &deg;C`;
 		});
 	toFahrenheit.addEventListener('click', (e) =>{
 		output.innerHTML = `${input.value} <center> &deg;C &rarr; ${temperatureUnits.celsius.cToF()} &deg;F </center>

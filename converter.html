@@ -207,10 +207,10 @@ const massButton = document.getElementById('mass').addEventListener('click', (e)
 	toImperial.style.display='block';
 	resetButton.style.display = 'block';
 	toMetric.addEventListener('click', (e) => {
-		output.innerHTML = `${input.value} ounce &rarr; ${massUnits.imperial.ounce()} g <br>
-		${input.value} pound &rarr; ${massUnits.imperial.pound()} kg <br>
-		${input.value} stone &rarr; ${massUnits.imperial.stone()} kg <br>
-		${input.value} ton &rarr; ${massUnits.imperial.imperialTon()} t
+		output.innerHTML = `${input.value} ounce &rarr; ${massUnits.imperial.ounce()} Gramm <br>
+		${input.value} pound &rarr; ${massUnits.imperial.pound()} Kilogramm <br>
+		${input.value} stone &rarr; ${massUnits.imperial.stone()} Kilogramm <br>
+		${input.value} ton &rarr; ${massUnits.imperial.imperialTon()} Tonne
 		`;
 	});
 	toImperial.addEventListener('click', (e) => {
@@ -239,16 +239,16 @@ const volumeButton = document.getElementById('volume').addEventListener('click',
 	resetButton.style.display = 'block';
 	toMetric.addEventListener('click', (e) => {
 		output.innerHTML = `${input.value} fl. ounce &rarr; ${volumeUnits.imperial.fluidOunce()} ml <br>
-		${input.value} pint &rarr; ${volumeUnits.imperial.pint()} litre <br>
-		${input.value} quart &rarr; ${volumeUnits.imperial.quart()} litre <br>
-		${input.value} gallon &rarr; ${volumeUnits.imperial.gallon()} litre
+		${input.value} Pint &rarr; ${volumeUnits.imperial.pint()} Liter <br>
+		${input.value} Quart &rarr; ${volumeUnits.imperial.quart()} Liter <br>
+		${input.value} Gallone &rarr; ${volumeUnits.imperial.gallon()} Liter
 		`;
 	});
 	toImperial.addEventListener('click', (e) =>{
 		output.innerHTML = `${input.value} ml &rarr; ${volumeUnits.metric.ml()} fluid ounce <br>
-		${input.value} litre &rarr; ${volumeUnits.metric.lToPt()} pint <br>
-		${input.value} litre &rarr; ${volumeUnits.metric.lToQt()} quart <br>
-		${input.value} litre &rarr; ${volumeUnits.metric.lToGallon()} gallon
+		${input.value} Liter &rarr; ${volumeUnits.metric.lToPt()} pint <br>
+		${input.value} Liter &rarr; ${volumeUnits.metric.lToQt()} quart <br>
+		${input.value} Liter &rarr; ${volumeUnits.metric.lToGallon()} gallon
 		`;
 	});
 	output.style.display = 'block';

@@ -214,10 +214,10 @@ const massButton = document.getElementById('mass').addEventListener('click', (e)
 		`;
 	});
 	toImperial.addEventListener('click', (e) => {
-		output.innerHTML = `${input.value} g &rarr; ${massUnits.metric.gram()} ounce <br>
-		${input.value} kg &rarr; ${massUnits.metric.kglb()} pound <br>
-		${input.value} kg &rarr; ${massUnits.metric.kgst()} stone <br>
-		${input.value} t &rarr; ${massUnits.metric.metricTonne()} ton 
+		output.innerHTML = `${input.value} Gramm &rarr; ${massUnits.metric.gram()} ounce <br>
+		${input.value} Kilogramm &rarr; ${massUnits.metric.kglb()} pound <br>
+		${input.value} Kilogramm &rarr; ${massUnits.metric.kgst()} stone <br>
+		${input.value} Tonne &rarr; ${massUnits.metric.metricTonne()} ton 
 		`;
 	});
 	output.style.display = 'block';
